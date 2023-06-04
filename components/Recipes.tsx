@@ -38,7 +38,7 @@ export default function Recipes(props: { qry: string | null }) {
     useEffect(() => {
         const fetchRecipes = async () => {
             setLoading(true);
-            const res = await fetch("http://localhost:5000/api/recipes");
+            const res = await fetch(`${process.env.BACKEND_URL}/api/recipes`);
             const data = await res.json();
             console.log("data", data);
 

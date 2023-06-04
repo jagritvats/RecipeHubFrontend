@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import FeaturedRecipes from "./Featured";
+import Link from "next/link";
 
 export default function Hero() {
     const router = useRouter();
@@ -105,23 +106,14 @@ export default function Hero() {
                         </div>
 
                         <div className="mt-10">
-                            <form
-                                action="#"
-                                method="POST"
-                                className="sm:flex justify-center"
-                            >
-                                <div className="mt-3 sm:mt-0 sm:ml-3">
-                                    <button
-                                        onClick={() => {
-                                            router.push("/login");
-                                        }}
-                                        type="submit"
-                                        className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
-                                    >
-                                        Get started
-                                    </button>
-                                </div>
-                            </form>
+                            <div className="mt-3 sm:mt-0 sm:ml-3">
+                                <Link
+                                    href="/login"
+                                    className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                                >
+                                    Get started
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,42 +123,6 @@ export default function Hero() {
                         <h2 className="text-2xl font-bold mb-4">
                             Featured Recipes
                         </h2>
-
-                        {/* <div className="grid grid-cols-3 gap-4">
-							<div className="bg-white rounded-lg shadow-lg p-4">
-								<h3 className="text-xl font-bold mb-2">
-									Recipe 1
-								</h3>
-								<p className="text-gray-600">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Sed euismod, sapien vel
-									bibendum bibendum, velit sapien bibendum
-									sapien, vel bibendum sapien velit.
-								</p>
-							</div>
-							<div className="bg-white rounded-lg shadow-lg p-4">
-								<h3 className="text-xl font-bold mb-2">
-									Recipe 2
-								</h3>
-								<p className="text-gray-600">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Sed euismod, sapien vel
-									bibendum bibendum, velit sapien bibendum
-									sapien, vel bibendum sapien velit.
-								</p>
-							</div>
-							<div className="bg-white rounded-lg shadow-lg p-4">
-								<h3 className="text-xl font-bold mb-2">
-									Recipe 3
-								</h3>
-								<p className="text-gray-600">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Sed euismod, sapien vel
-									bibendum bibendum, velit sapien bibendum
-									sapien, vel bibendum sapien velit.
-								</p>
-							</div>
-						</div> */}
 
                         <FeaturedRecipes />
                     </div>

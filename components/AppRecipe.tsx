@@ -38,7 +38,7 @@ export default function AddRecipe() {
         };
         //  Send new recipe to API
 
-        fetch("http://localhost:5000/api/recipes", {
+        fetch("process.env.BACKEND_URL/api/recipes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -87,7 +87,7 @@ const Recipe = (props: Props) => {
                                 // delete recipe and refresh
 
                                 const res = await fetch(
-                                    `http://localhost:5000/api/recipes/${id}`,
+                                    `${process.env.BACKEND_URL}/api/recipes/${id}`,
                                     {
                                         method: "DELETE",
                                     }
