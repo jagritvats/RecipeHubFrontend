@@ -26,7 +26,7 @@ const ProfilePage = () => {
         // }
         const fetchRecipe = async () => {
             const res = await fetch(
-                `${process.env.BACKEND_URL}/api/recipes/author/${authorEmail}/public`
+                `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/recipes/author/${authorEmail}/public`
             );
             const data = await res.json();
             // console.log(data);
@@ -35,7 +35,7 @@ const ProfilePage = () => {
 
         const fetchPrivateRecipe = async () => {
             const res = await fetch(
-                `${process.env.BACKEND_URL}/api/recipes/author/${authorEmail}/private`
+                `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/recipes/author/${authorEmail}/private`
             );
             const data = await res.json();
             // console.log(data);

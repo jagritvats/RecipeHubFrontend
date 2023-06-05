@@ -18,7 +18,7 @@ const RecipePage = () => {
         }
         const fetchRecipe = async () => {
             const res = await fetch(
-                `${process.env.BACKEND_URL}/api/recipes/${id}`
+                `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/recipes/${id}`
             );
             const data = await res.json();
             console.log(data);
@@ -97,7 +97,7 @@ const RecipePage = () => {
                         // delete recipe and refresh
 
                         const res = await fetch(
-                            `${process.env.BACKEND_URL}/api/recipes/${id}`,
+                            `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/recipes/${id}`,
                             {
                                 method: "DELETE",
                             }

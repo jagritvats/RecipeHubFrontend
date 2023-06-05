@@ -38,7 +38,7 @@ export default function AddRecipe() {
         };
         //  Send new recipe to API
 
-        fetch("process.env.BACKEND_URL/api/recipes", {
+        fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/recipes`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
