@@ -1,8 +1,21 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## Project Preview
+<p align="center">
+  <img src="https://github.com/jagritvats/RecipeHubFrontend/assets/69034224/a22ccd5b-d2b3-4a32-ae69-35e26e4fe65f" alt="homepage">
+  <img src="https://github.com/jagritvats/RecipeHubFrontend/assets/69034224/12b2a1a8-bb06-4dd7-960e-cb695e085929" alt="create recipe form">
+  <img src="https://github.com/jagritvats/RecipeHubFrontend/assets/69034224/132c4ac9-ef59-4d07-b02f-aa9282ca2774" alt="recipes page">
+  <img src="https://github.com/jagritvats/RecipeHubFrontend/assets/69034224/6027854a-a7a2-44c1-958e-f865bc190926" alt="recipe page">
+  <img src="https://github.com/jagritvats/RecipeHubFrontend/assets/69034224/76841d29-a851-4c4f-a962-ad4d2a07f19d" alt="profile page">
+</p>
+
+### Live URL : [https://recipe-hub-frontend.vercel.app/](https://recipe-hub-frontend.vercel.app/)
+
+## Getting Started
+- Create `.env` file with required environment variables (Firebase info, Backend URI) for the frontend.
+- Clone and run the Node.js backend from the backend Repo, and create `.env` file with required variables (MongoDB URI).
+- Then, run the development server:
 
 ```bash
 npm run dev
@@ -14,13 +27,6 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
@@ -28,11 +34,3 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
